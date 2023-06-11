@@ -1,0 +1,847 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color: #0ef;
+    --bg-color: #1f242d;
+    --font-color: #fff;
+    --second-bg-color:#323946;
+
+}
+body{
+    background: var(--bg-color);
+    color: var(--font-color);
+    overflow-x: none;
+}
+.header{
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    padding: 2rem;
+    background: var(--bg-color);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 0;
+}
+span{
+    color: var(--main-color);
+}
+.header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: 2rem;
+}
+.header nav ul{
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 ;
+}
+.header nav ul li{
+    list-style: none;
+}
+.header nav ul li a{
+    padding: .2rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--font-color);
+    border: .05rem solid transparent;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.header nav ul li a:hover{
+    color: var(--main-color);
+    border:.05rem solid var(--main-color);
+    border-radius: 2rem;
+    transition: .5s;
+}
+.header i{
+    display: none;
+}
+/* design section-1 */
+.section-1{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-color);
+    max-width: 100%;
+
+}
+.section-1 .about{
+    flex-basis: 50%;
+    padding: 7rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h3{
+    margin: 0 6rem;
+    font-size: 1.7rem;
+    color: var(--font-color);
+    -align: start;
+    font-weight: 600;
+}
+h2{
+    margin: 0 6rem;
+    font-size: 4.3rem;
+    letter-spacing: .3rem;
+    color: var(--font-color);
+}
+p{
+    margin: 1rem 6rem;
+    letter-spacing: .08rem;
+    font-size: .8rem;
+    color:#8a8282;
+}
+.about .icons {
+    margin-left: 5.2rem;
+}
+.about .icons a{
+ 
+    margin: 1rem .8rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: .15rem solid var(--main-color);
+    font-size: 2rem;
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 50%;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.about .icons a:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+ #btn{
+    margin: 2rem 6rem;
+    padding: .6rem 1.7rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    width: max-content;
+    color: var(--bg-color);
+    border-radius: 2rem;
+    background: var(--main-color);
+    cursor: pointer;
+    transition: .5s ease;
+}
+#btn:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.section-1  .img-container{
+    padding-right: 10vw;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+.section-1 .img-container .img-wrap{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    width: 30vw;
+    border-radius:50%;
+    pointer-events: none;
+    box-shadow: 0 0 1rem var(--main-color);
+    animation: animate 4s linear infinite;
+}
+.section-1 .img-wrap img{
+    width: 100%;
+    border-radius: 50%;
+    border: .5rem solid transparent;
+    outline: .3rem solid var(--main-color);
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* designing Section-2 */
+.section-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 9rem 0 5rem;
+    background: var(--second-bg-color);
+}
+.img-container-2 {
+    padding: 0 10vw;
+}
+.section-2 .img-container-2 .img-wrap-2{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 30vw;
+    border-radius:50%;
+    pointer-events: none;
+    box-shadow: 0 0 1rem var(--main-color);
+    animation: animate 4s linear infinite;
+
+}
+ .section-2 .img-container-2 .img-wrap-2 img{
+    width: 100%;
+    border-radius: 50%;
+    border: .5rem solid transparent;
+    outline: .3rem solid var(--main-color);
+}
+
+.about-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem 0 0;
+}
+.about-2 h4{ 
+    margin: .3rem 0 0 ; 
+    font-size: 1.2rem;
+    color: var(--font-color);
+}
+.about-2 h3{
+    margin-left: 0;
+}
+.about-2 p{
+    margin-left: 0;
+}
+.section-2 .about-2 #btn{
+    margin-left: 0;
+}
+/* design section-3 */
+.section-3{
+    padding: 9rem 0rem 5rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.section-3 .skills{
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+
+}
+.skills .card{
+    padding: 2rem;
+    border-radius: 1.5rem;
+    list-style: none;
+    background: var(--second-bg-color);
+    text-align: center;
+    width: calc(100%-30);
+    transition: .5s ease;
+    border: .2rem solid transparent;
+}
+.section-3 .skills .card p{
+    margin: 0;
+    padding: 1rem;
+}
+.section-3 .skills .card:hover{
+    cursor: pointer;
+    border: .2rem solid var(--main-color);
+    transform: scale(1.08);
+    color: var(--main-color);
+
+}
+.section-3 .skills .card i{
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    color: var(--font-color);
+    transition: .5s ease;
+}
+.section-3 .skills .card:hover i{
+    color: var(--main-color);
+}
+.section-3 .skills .card #btn {
+    margin: 1rem auto;
+}
+/* section-4 designing*/
+.section-4{
+    padding: 2rem 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-4 h3{
+    padding: 5rem;
+}
+.project-box{
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.project-box .wrap {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    cursor: pointer;
+}
+.project-box .wrap img{
+    width:20rem;
+    transition: .5s ease;
+}
+.project-box .wrap:hover img{
+   transform: scale(1.1);
+}
+.project-box .wrap .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to bottom, rgb(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 .4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.project-box .wrap:hover .content{
+    transform: translateY(0);
+}
+.project-box .wrap .content h4{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+.project-box .wrap .content p{
+    font-size: .6rem;
+    color: var(--font-color);
+    padding: 0;
+    margin: 0;
+}
+.project-box .wrap .content i{
+    margin-top: 1rem;
+    border-radius: 50%;
+    background: var(--font-color);
+    font-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+    color: var(--bg-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------section-5 design--------*/
+
+.section-5{
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-5 form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.section-5 form input[type="text"],.section-5 form input[type="email"]{
+    margin: 2rem .5rem 0;
+    background-color: var(--second-bg-color);
+    color: var(--font-color);
+    padding: .2rem 1rem;
+    font-size: 1.3rem;
+    width: 47%;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+}
+.section-5 form textarea{
+    margin: 1rem .5rem;
+    background-color: var(--second-bg-color);
+    color: var(--bg-color);
+    padding: .2rem 1rem;
+    font-size: 1.3rem;
+    width: 96%;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+}
+/*------- Responsive design------*/
+
+/*------- Brekpopint-1---------*/
+@media (min-width:770px) and (max-width:1080px){
+    .header{
+        padding: .5rem 0;
+    }
+    .header i{
+        display:  none;
+    }
+    .header h1{
+        font-size: 2.5rem;
+    }
+    .header nav ul{
+        margin-right: 1rem;
+        gap: .5rem;
+    }
+    .header nav ul li a{
+        font-size: 1rem;
+    }
+    .section-1 .about h3{
+        font-size: 1.5rem;
+    }
+      /* -------design section-1------*/
+
+
+    .section-1 .about h2{
+        font-size: 3.5rem;
+    }
+    .section-1 .about p{
+        font-size: .8rem;
+    }
+    .section-1 .about .icons a{
+        font-size: 1.7rem;
+        width: 3rem;
+        height: 3rem;
+        margin: .5rem;
+    }
+    .section-1 .img-container .img-wrap{
+        margin: 0;
+        width: 35vw;
+    }
+     /* -------design section-2------*/
+
+
+    .section-2 .about-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       
+    }
+    .section-2 .about-2 h3{
+        font-size: 1.5rem;
+        margin-right: 3rem;
+    }
+    .section-2 .about-2 h4{
+        margin-right: 3rem;  
+    }
+    .section-2 .about-2 p{
+        font-size: .8rem;
+        margin-right: 3rem;
+        text-align: justify;
+    }
+    .section-2 .about-2 #btn{
+        margin-right: 3rem;
+        font-size: 1.2rem;
+    }
+    .section-2 .img-container-2 .img-wrap-2{
+        margin: 0;
+        width: 35vw;
+    }
+     /* -------design section-3------*/
+
+
+      .section-3 .skills{
+        margin: 0;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-wrap: wrap;       
+        gap: 1.5rem;
+    }
+    .project-box{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 1.3rem;
+    }
+    .skills .card{
+        width:45%;
+    }
+}
+/*--------- Other Brekpoints-2--------*/
+
+
+@media (min-width:600px) and (max-width:770px){
+    .header i{
+        position: relative;
+        display: block;
+        margin-right: 1.2rem;
+        margin-top: -0.2rem;
+        font-size: 1.8rem;
+        color: var(--font-color);
+        padding: .4rem;
+        box-shadow: 0 0 .5rem var(--main-color);
+        border-radius: .5rem;
+    }
+    
+    .header h1{
+        font-size: 3rem;
+        margin-left: 1.8rem;
+    }
+    .header nav ul{
+        padding: 2.5rem;
+        position: absolute;
+        top: 5rem;
+        left: -100%;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        background-color: #0ef;
+        transition: .5s ease-in;
+    }
+    .header nav ul li a{
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--bg-color);
+        border: none;
+        cursor: pointer; 
+    }
+    .header nav ul li a:hover{
+        border: none;
+        border-radius: none;
+        color: var(--font-color);
+        cursor: pointer;
+    }
+    /* -------design section-1------*/
+
+
+    .section-1{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.section-1 .about h3{
+    font-size: 1.5rem;
+}
+.section-1 .about h2{
+    font-size: 3.5rem;
+}
+.section-1 .about p{
+    font-size: .8rem;
+}
+.section-1 .about .icons a{
+    font-size: 1.7rem;
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem;
+}
+.section-1 .img-container .img-wrap{
+    margin: 7rem 0 0 3rem;
+    width: 60vw;
+}
+/* ------design Section-2-------*/
+
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0;
+    margin: 0;
+}
+.section-2 .about-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+.section-2 .about-2 h3{
+    font-size: 1.5rem;
+    margin-left: 7rem;
+}
+.section-2 .about-2 p{
+    font-size: .8rem;
+    margin-left: 7rem;
+    text-align: justify;
+}
+.section-2 .about-2 #btn{
+    margin-left: 7rem;
+    font-size: 1.2rem;
+}
+.section-2 .img-container-2 .img-wrap-2{
+    margin: 7rem 0 0;
+    width: 60vw;
+}
+/* ------design Section-3-------*/
+
+
+.section-3{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.section-3 h3{
+    font-size: 1.5rem; 
+}
+.section-3 .skills{
+    margin: 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+}
+.skills .card h4{
+    font-size: 1.1rem; 
+}
+.skills .card p{
+    font-size: .8rem;
+    text-align: justify; 
+}
+.skills .card #btn{
+    font-size: 1.2rem;  
+}
+.skills .card{
+    width:80%;
+    transition: .5s ease;
+    border: .2rem solid transparent;
+}
+/* ------design Section-4-------*/
+
+
+.section-4 h3{
+    padding: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem; 
+}
+.project-box{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1.3rem;
+}
+}
+/*--------- Other Brekpoints-3--------*/
+
+
+@media (max-width:600px) {
+    .header i{
+        position: relative;
+        display: block;
+        margin-right: 2rem;
+        font-size: 1.3rem;
+        color: var(--font-color);
+        padding: .4rem;
+        box-shadow: 0 0 .5rem var(--main-color);
+        border-radius: .5rem;
+    }
+    .header h1{
+        font-size: 2.2rem;
+        margin-left: 1.8rem;
+    }
+    .header nav ul{
+        padding: 2rem;
+        position: absolute;
+        top: 4rem;
+        left: -100%;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        background-color: #0ef;
+        transition: .3s ease-in-out;
+    }
+    .header nav ul li a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--bg-color);
+        border: none;
+        cursor: pointer; 
+    }
+    .header nav ul li a:hover{
+        border: none;
+        border-radius: none;
+        cursor: pointer;
+        color: var(--font-color);
+    }
+    .section-1{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.section-1 .about h3{
+    font-size: 1.2rem;
+}
+.section-1 .about h2{
+    font-size: 3rem;
+}
+.section-1 .about p{
+    font-size: .7rem;
+}
+.section-1 .about .icons a{
+    font-size: 1.5rem;
+    width: 2.9rem;
+    height: 2.9rem;
+    margin: .4rem;
+}
+.section-1 .img-container .img-wrap{
+    margin: 7rem 0 0 3rem;
+    width: 60vw;
+}
+/* ------design Section-2-------*/
+
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0;
+    margin: 0;
+}
+.section-2 .about-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+.section-2 .about-2 h3{
+    font-size: 1.2rem;
+    margin-left: 7rem;
+}
+.section-2 .about-2 p{
+    font-size: .7rem;
+    margin-left: 7rem;
+    text-align: justify;
+}
+.section-2 .about-2 #btn{
+    margin-left: 7rem;
+    font-size: 1.2rem;
+}
+.section-2 .img-container-2 .img-wrap-2{
+    margin: 7rem 0 0;
+    width: 60vw;
+}
+/* ------design Section-3-------*/
+
+
+.section-3{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.section-3 h3{
+    font-size: 1.2rem; 
+}
+.section-3 .skills{
+    margin: 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.skills .card h4{
+    font-size: 1rem; 
+}
+.skills .card p{
+    font-size: .7rem;
+    text-align: justify; 
+}
+.skills .card #btn{
+    font-size: 1.2rem;  
+}
+.skills .card{
+    width:80%;
+    transition: .5s ease;
+    border: .2rem solid transparent;
+}
+/* ------design Section-4-------*/
+
+
+.section-4 h3{
+    padding: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem; 
+}
+.project-box{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 1.3rem;
+}
+/* ------design Section-5-------*/
+.section-5 h3{
+    margin: 2rem 0;
+}
+.section-5 form input[type="text"],.section-5 form input[type="email"]{
+    margin: 1rem 1rem 0;
+    background-color: var(--second-bg-color);
+    color: var(--font-color);
+    padding: .2rem 1rem;
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+}
+.section-5 form textarea{
+    margin: 1rem 1rem;
+    background-color: var(--second-bg-color);
+    color: var(--bg-color);
+    padding: .2rem 1rem;
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+}
+}
